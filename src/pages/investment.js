@@ -29,6 +29,7 @@ const Investment = ({data}) => {
         <title>Investment - KNW Photography</title>
         <meta name="description" content="View pricing and information for lifestyle and wedding photography packages" />
         <meta property="og:title" content="Investment - KNW Photography"/>
+        <meta property="og:description" content="View pricing and information for lifestyle and wedding photography packages" />
         <meta property="og:image" content={page.cover.sizes.src} />
         <meta property="og:image:width" content="1800" />
         <meta property="og:image:height" content="1200" />

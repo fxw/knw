@@ -30,9 +30,10 @@ const PostTemplate = ({data}) => {
 
     <Helmet>
       <title>{title} - KNW Photography</title>
-      <meta name="description" content={title} />
+      <meta name="description" content={description.internal.content} />
       <meta property="og:title" content={title + " - KNW Photography"}/>
       <meta property="og:image" content={cover.sizes.src} />
+      <meta property="og:description" content={description.internal.content} />
       <meta property="og:image:width" content="1800" />
       <meta property="og:image:height" content="1200" />
       <meta property="og:url" content={"https://www.knw.io/" + slug + "/"} />
@@ -85,6 +86,9 @@ export const query = graphql`
       location
       date(formatString: "M.DD.YYYY")
       description {
+        internal {
+          content
+        }
         childMarkdownRemark {
           html
         }

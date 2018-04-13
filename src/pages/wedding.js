@@ -14,6 +14,7 @@ const posts = data.allContentfulGallery.edges;
         <title>Wedding Galleries - KNW Photography</title>
         <meta name="description" content="View wedding galleries by KNW Photography" />
         <meta property="og:title" content="Wedding Galleries - KNW Photography"/>
+        <meta property="og:description" content="View wedding galleries by KNW Photography" />
         <meta property="og:image" content={posts[0].node.cover.sizes.src} />
         <meta property="og:image:width" content="1800" />
         <meta property="og:image:height" content="1200" />
